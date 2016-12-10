@@ -48,7 +48,7 @@ func Startup(sessionID string) error {
 
 	var config mongoConfiguration
 	config.Hosts = "localhost"
-	config.Database = "MyAppDatabase"
+	config.Database = "Database"
 
 	if err := envconfig.Process("mgo", &config); err != nil {
 		log.CompletedError(err, sessionID, "Startup")

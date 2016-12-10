@@ -19,9 +19,9 @@ type (
 var Config serviceConfiguration
 
 func init() {
-	Config.Database = "MyAppDatabase"
+	Config.Database = "Database"
 
-	if err := envconfig.Process("MyAppDatabase", &Config); err != nil {
+	if err := envconfig.Process("Database", &Config); err != nil {
 		log.CompletedError(err, MainGoRoutine, "Init")
 	}
 

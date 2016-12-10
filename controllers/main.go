@@ -25,3 +25,4 @@ func (c *IndexController) GetAllUsers() {
 	c.Data["json"] = &results
 	c.ServeJSON()
 }
+
