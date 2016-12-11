@@ -16,7 +16,7 @@ func main() {
 
 	tracelog.Start(tracelog.LevelTrace)
 
-	// Init mongo
+	// Init mongo db
 	tracelog.Started("main", "Initializing Mongo")
 	err := mongo.Startup(MainGoRoutine)
 	if err != nil {
