@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;go-kata&gt;">
+    <CLASSES>
+      <root url="file:///usr/local/Cellar/go/src/src" />
+      <root url="file:///usr/local/Cellar/go/src/pkg" />
+      <root url="file:///usr/local/Cellar/go/src/golang.org" />
+      <root url="file:///usr/local/Cellar/go/src/bin" />
+      <root url="file:///usr/local/Cellar/go/src/sourcegraph.com" />
+      <root url="file:///usr/local/Cellar/go/src/github.com" />
+      <root url="file:///usr/local/Cellar/go/src/GoApp" />
+      <root url="file:///usr/local/Cellar/go/src/gopkg.in" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file:///usr/local/Cellar/go/src/src" />
+      <root url="file:///usr/local/Cellar/go/src/pkg" />
+      <root url="file:///usr/local/Cellar/go/src/golang.org" />
+      <root url="file:///usr/local/Cellar/go/src/bin" />
+      <root url="file:///usr/local/Cellar/go/src/sourcegraph.com" />
+      <root url="file:///usr/local/Cellar/go/src/github.com" />
+      <root url="file:///usr/local/Cellar/go/src/GoApp" />
+      <root url="file:///usr/local/Cellar/go/src/gopkg.in" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>

@@ -1,13 +1,12 @@
 package services
 
 import (
-	"gopkg.in/mgo.v2"
 	"GoApp/Utilities/helper"
 	log "github.com/goinggo/tracelog"
+	"gopkg.in/mgo.v2"
 )
 
 const MainGoRoutine = "main"
-
 
 type (
 	Service struct {

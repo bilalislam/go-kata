@@ -9,4 +9,5 @@ func init() {
 	beego.Router("/", &controllers.MainController{})
 	beego.Router("Index", new(controllers.IndexController), "get:Index")
 	beego.Router("GetAllUsers", new(controllers.IndexController), "get:GetAllUsers")
+	beego.Router("Search", new(controllers.IndexController), "post:Search")
 }

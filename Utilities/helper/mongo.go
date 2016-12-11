@@ -1,16 +1,16 @@
 package mongo
 
 import (
-	"gopkg.in/mgo.v2"
-	"github.com/kelseyhightower/envconfig"
+	"fmt"
 	log "github.com/goinggo/tracelog"
+	"github.com/kelseyhightower/envconfig"
+	"gopkg.in/mgo.v2"
 	"strings"
 	"time"
-	"fmt"
 )
 
 const (
-	MasterSession = "master"
+	MasterSession    = "master"
 	MonotonicSession = "monotonic"
 )
 
@@ -18,7 +18,7 @@ var (
 	singleton mongoManager
 )
 
-type(
+type (
 	mongoConfiguration struct {
 		Hosts    string
 		Database string
@@ -56,7 +56,7 @@ func Startup(sessionID string) error {
 
 	//Create the Mongo Manager
 	singleton = mongoManager{
-		sessions:make(map[string]mongoSession),
+		sessions: make(map[string]mongoSession),
 	}
 
 	// Log the mongodb connection straps.
@@ -83,7 +83,6 @@ func Startup(sessionID string) error {
 	return nil
 }
 
-
 // CreateSession creates a connection pool for use.
 func CreateSession(sessionID string, mode string, sessionName string, hosts []string, databaseName string, username string, password string) error {
 
@@ -91,9 +90,9 @@ func CreateSession(sessionID string, mode string, sessionName string, hosts []st
 
 	//Create the database object
 	mongoSession := mongoSession{
-		mongoDBDialInfo:&mgo.DialInfo{
-			Addrs:hosts,
-			Timeout:60 * time.Second,
+		mongoDBDialInfo: &mgo.DialInfo{
+			Addrs:    hosts,
+			Timeout:  60 * time.Second,
 			Database: databaseName,
 			Username: username,
 			Password: password,

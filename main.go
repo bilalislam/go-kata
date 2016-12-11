@@ -1,15 +1,14 @@
 package main
 
 import (
+	"GoApp/Utilities/helper"
 	_ "GoApp/routers"
 	"github.com/astaxie/beego"
-	"GoApp/Utilities/helper"
 	"github.com/goinggo/tracelog"
 	"os"
 )
 
 const MainGoRoutine = "main"
-
 
 func main() {
 	beego.SetStaticPath("/static", "static")
@@ -29,4 +28,3 @@ func main() {
 	tracelog.Completed(MainGoRoutine, "Website Shutdown")
 	tracelog.Stop()
 }
-

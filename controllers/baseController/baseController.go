@@ -1,9 +1,9 @@
 package baseController
 
 import (
-	"github.com/astaxie/beego"
-	"GoApp/services"
 	"GoApp/Utilities/helper"
+	"GoApp/services"
+	"github.com/astaxie/beego"
 )
 
 type (
@@ -35,5 +35,3 @@ func (baseController *BaseController) Finish() {
 		}
 	}()
 }
-
-

@@ -26,3 +26,10 @@ func (c *IndexController) GetAllUsers() {
 	c.ServeJSON()
 }
 
+func (c *IndexController) Search() {
+	c.TplName = "main.html"
+	results, _ := userService.Search(c.Service, c.GetString("keyword"))
+
+	c.Data["json"] = &results
+	c.ServeJSON()
+}
