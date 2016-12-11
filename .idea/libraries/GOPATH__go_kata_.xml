@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;go-kata&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../src/src" />
+      <root url="file://$PROJECT_DIR$/../src/pkg" />
+      <root url="file://$PROJECT_DIR$/../src/golang.org" />
+      <root url="file://$PROJECT_DIR$/../src/bin" />
+      <root url="file://$PROJECT_DIR$/../src/sourcegraph.com" />
+      <root url="file://$PROJECT_DIR$/../src/github.com" />
+      <root url="file://$PROJECT_DIR$/../src/GoApp" />
+      <root url="file://$PROJECT_DIR$/../src/gopkg.in" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../src/src" />
+      <root url="file://$PROJECT_DIR$/../src/pkg" />
+      <root url="file://$PROJECT_DIR$/../src/golang.org" />
+      <root url="file://$PROJECT_DIR$/../src/bin" />
+      <root url="file://$PROJECT_DIR$/../src/sourcegraph.com" />
+      <root url="file://$PROJECT_DIR$/../src/github.com" />
+      <root url="file://$PROJECT_DIR$/../src/GoApp" />
+      <root url="file://$PROJECT_DIR$/../src/gopkg.in" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
